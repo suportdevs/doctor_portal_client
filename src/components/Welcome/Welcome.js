@@ -4,7 +4,7 @@ import chairBg from "../../assets/images/chair.png";
 
 const Welcome = () => {
     return (
-        <div className="welcome-warpper-area" style={{backgroundImage: `url(${welcomeBg})`}}>
+        <div className="relative welcome-warpper-area" style={{backgroundImage: `url(${welcomeBg})`}}>
             <div className="welcome-area container mx-auto">
                 <div className="py-32 grid grid-cols-2 gap-20 flex items-center">
                     <div>
