@@ -10,7 +10,7 @@ const Welcome = () => {
                     <div>
                         <h1 className='text-5xl font-bold text-gray-700'>Your New Smile Starts Here</h1>
                         <p className='py-10 text-gray-700'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
-                        <button className='p-3 rounded text-white bg-gradient-to-r from-cyan-300 to-cyan-400'>Get Started</button>
+                        <button className='p-3 rounded text-white bg_color'>Get Started</button>
                     </div>
                     <div>
                         <img src={chairBg} alt="" />

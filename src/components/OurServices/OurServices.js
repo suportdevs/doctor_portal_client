@@ -8,7 +8,7 @@ const OurServices = () => {
     return (
             <div className="container mx-auto text-center">
                 <div className='my-10'>
-                    <h3 className='font-bold gradient-to-r from-cyan-300 to-cyan-400'>OUR SERVICES</h3>
+                    <h3 className='font-bold text_color'>OUR SERVICES</h3>
                     <h1 className='text-3xl'>Services We Provide</h1>
                 </div>
                 <div className='grid grid-cols-3 gap-10'>

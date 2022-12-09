@@ -15,3 +15,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bg_color{
+  background: linear-gradient(45deg, #0fcfec, #19d3ae) !important;
+}
+.text_color{
+  color: #19D3AE !important;
+}
