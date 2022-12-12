@@ -4,10 +4,10 @@ import Welcome from '../Welcome/Welcome';
 
 const Header = () => {
     return (
-        <div>
+        <>
             <Navbar></Navbar>
             <Welcome></Welcome>
-        </div>
+        </>
     );
 };
 
