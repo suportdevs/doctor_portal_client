@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div style={{backgroundImage: `url(${footerBg})`}} className='bg-center'>
             <div className="container mx-auto">
-                <div className='grid grid-cols-3 justity-space py-20'>
+                <div className='lg:grid lg:grid-cols-3 justity-space py-20'>
                     <div>
                         <h3 className="font-bold text-gray-400">SERVICES</h3>
                         <p>Emergency Checkup</p>
@@ -13,7 +13,7 @@ const Footer = () => {
                         <p>Weekly Checkup</p>
                         <p>Deep Checkup</p>
                     </div>
-                    <div>
+                    <div className='my-10 lg:my-0'>
                         <h3 className="font-bold text-gray-400">ORAL HEALTH</h3>
                         <p>Fluoride Treatment</p>
                         <p>Cavity Filling</p>

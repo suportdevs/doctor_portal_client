@@ -5,7 +5,7 @@ const InformationCard = ({icon, className, children}) => {
     return (
         <div>
             <div className={`${className}`}>
-                    <div className="grid grid-cols-4 gap-2 flex items-center">
+                    <div className="md:grid md:grid-cols-4 md:gap-2 md:flex text-center md:text-left items-center">
                         <div>
                             <FontAwesomeIcon icon={icon} className="text-7xl"/>
                         </div>

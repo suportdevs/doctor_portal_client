@@ -11,12 +11,12 @@ const OurServices = () => {
                     <h3 className='font-bold text_color'>OUR SERVICES</h3>
                     <h1 className='text-3xl'>Services We Provide</h1>
                 </div>
-                <div className='grid grid-cols-3 gap-10'>
+                <div className='lg:grid lg:grid-cols-3 lg:gap-10'>
                     <OurServicesCard icon={fluoride} className='shadow-lg rounded p-5'>
                         <h2 className='font-bold text-gray-700 mt-5'>Fluoride Treatment</h2>
                         <p>Lorem Ipsum is simply dummy printing and typesetting indust Ipsum has been the</p>
                     </OurServicesCard>
-                    <OurServicesCard icon={cavity} className='shadow-lg rounded p-5'>
+                    <OurServicesCard icon={cavity} className='shadow-lg rounded p-5 my-10 lg:my-0'>
                         <h2 className='font-bold text-gray-700 mt-5'>Cavity Filling</h2>
                         <p>Lorem Ipsum is simply dummy printing and typesetting indust Ipsum has been the</p>
                     </OurServicesCard>

@@ -11,7 +11,7 @@ const PatientsReview = () => {
                     <h3 className='font-bold text_color'>Testimonial</h3>
                     <h1 className='text-3xl'>What Our Patients Says</h1>
                 </div>
-                <div className='grid grid-cols-3 gap-10'>
+                <div className='lg:grid lg:grid-cols-3 lg:gap-10'>
                     <PatientsReviewCard icon={fluoride} className='shadow-lg rounded p-5 text-start'>
                         <p>It is a long established fact that by the readable content of a lot layout. The point of using Lorem a more-or-less normal distribu to using Content here, content</p>
                     </PatientsReviewCard>
