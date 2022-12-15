@@ -49,7 +49,7 @@ const bookings = [
 const AvaiableAppointments = ({date}) => {
     return (
         <div className='container mx-auto text-center mt-10'>
-            <h1 className='text-3xl text_color'>Available Services on {date.toDateString()}</h1>
+            <h1 className='text-3xl text_color font-bold'>Available Services on {date.toDateString()}</h1>
             <p>Please select a service.</p>
             <div className="lg:grid lg:grid-cols-3 lg:gap-10 mt-10">
                 {
