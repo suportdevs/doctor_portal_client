@@ -22,3 +22,7 @@ code {
 .text_color{
   color: #19D3AE !important;
 }
+.welcome-warpper-area .react-calendar{
+  border: none;
+  background-color: transparent;
+}

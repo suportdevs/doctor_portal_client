@@ -4,7 +4,7 @@ import footerBg from "../../assets/images/footer.png";
 const Footer = () => {
     return (
         <div style={{backgroundImage: `url(${footerBg})`}} className='bg-center'>
-            <div className="container mx-auto">
+            <div className="container mx-auto text-center lg:text-left">
                 <div className='lg:grid lg:grid-cols-3 justity-space py-20'>
                     <div>
                         <h3 className="font-bold text-gray-400">SERVICES</h3>
