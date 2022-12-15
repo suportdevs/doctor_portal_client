@@ -5,24 +5,22 @@ import Calendar from 'react-calendar';
 import Navbar from '../Navbar/Navbar';
 import 'react-calendar/dist/Calendar.css';
 
-const AppointmentHeader = () => {
-    const [value, onChange] = useState(new Date());
-    console.log(value);
+const AppointmentHeader = ({handleSelectedDate}) => {
     return (
         <div>
             <Navbar></Navbar>
             <div className="relative welcome-warpper-area " style={{backgroundImage: `url(${welcomeBg})`}}>
-            <div className="welcome-area container mx-auto">
-                <div className="py-20 lg:py-32 flex flex-col-reverse text-center lg:grid lg:grid-cols-2 lg:gap-20 lg:flex  items-center">
-                    <div className='justify-items-end'>
-                    <Calendar onChange={onChange} value={value} className='rounded shadow-lg border-none' />
-                    </div>
-                    <div>
-                        <img src={chairBg} alt="" />
+                <div className="welcome-area container mx-auto">
+                    <div className="py-20 lg:py-32 flex flex-col-reverse text-center lg:grid lg:grid-cols-2 lg:gap-20 lg:flex  items-center">
+                        <div className='justify-items-end'>
+                            <Calendar onChange={handleSelectedDate} value={new Date()} className='rounded shadow-lg border-transparent' style={{ border: '0px solid white'}} />
+                        </div>
+                        <div>
+                            <img src={chairBg} alt="" />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     );
 };
