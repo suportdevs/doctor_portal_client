@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className='absolute left-0 top-0 right-0 z-10 container mx-auto'>
             <div className="grid grid-cols-2">
                 <div>
-                    <h2 className='py-5 font-bold text_color'>Doctor Portal</h2>
+                    <h2 className='py-5 font-bold text_brand'>Doctor Portal</h2>
                 </div>
                 <div className='flex justify-self-end items-center'>
                     <Bars3Icon onClick={(e) => setToggleMenu('block')} className={`${(toggleMenu === 'hidden') ? 'block' : 'hidden'} w-6 lg:hidden`}/>

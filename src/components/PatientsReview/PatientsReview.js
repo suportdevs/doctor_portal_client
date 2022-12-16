@@ -8,7 +8,7 @@ const PatientsReview = () => {
     return (
             <div className="container mx-auto text-center my-20">
                 <div className='my-10'>
-                    <h3 className='font-bold text_color'>Testimonial</h3>
+                    <h3 className='font-bold text_brand'>Testimonial</h3>
                     <h1 className='text-3xl'>What Our Patients Says</h1>
                 </div>
                 <div className='lg:grid lg:grid-cols-3 lg:gap-10'>
