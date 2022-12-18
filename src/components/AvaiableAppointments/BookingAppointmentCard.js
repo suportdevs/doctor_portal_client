@@ -19,7 +19,7 @@ const BookingAppointmentCard = ({name, time, space, date}) => {
             <p className='font-bold'>{time}</p>
             <p>{space} Avaiable Space</p>
             <Button handleClick={openModal}>Book Appointment</Button>
-            <BookingForm modalIsOpen={modalIsOpen} closeModal={closeModal} title={name}></BookingForm>
+            <BookingForm modalIsOpen={modalIsOpen} closeModal={closeModal} title={name} date={date}></BookingForm>
         </div>
     );
 };
