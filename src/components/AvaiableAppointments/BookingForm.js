@@ -20,8 +20,9 @@ Modal.setAppElement('#root');
 const BookingForm = ({title, modalIsOpen, closeModal, date}) => {
     const [storeAppointment] = useStoreAppointmentMutation();
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => {
-        storeAppointment(data).unwrap();
+    const onSubmit = appointmentObj => {
+        storeAppointment(appointmentObj).unwrap();
+        closeModal();
     };
 
     return (
