@@ -9,7 +9,8 @@ export const apiSlice = createApi({
                 url: "/appointment",
                 method: "POST",
                 body: initialAppointment
-            })
+            }),
+            invalidatesTags: ['appointments']
         }),
     }),
 });

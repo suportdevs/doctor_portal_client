@@ -18,7 +18,7 @@ const customStyles = {
 Modal.setAppElement('#root');
 
 const BookingForm = ({title, modalIsOpen, closeModal, date}) => {
-    const [storeAppointment] = useStoreAppointmentMutation();
+    const [storeAppointment, result] = useStoreAppointmentMutation();
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = appointmentObj => {
         storeAppointment(appointmentObj).unwrap();
