@@ -1,8 +1,8 @@
 import React from 'react';
 import welcomeBg from "../../assets/images/bg.png";
 import chairBg from "../../assets/images/chair.png";
+import Navbar from '../Navbar/Navbar'; 
 import Calendar from 'react-calendar';
-import Navbar from '../Navbar/Navbar';
 import 'react-calendar/dist/Calendar.css';
 
 const AppointmentHeader = ({handleSelectedDate, date}) => {
