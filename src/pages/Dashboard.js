@@ -8,7 +8,6 @@ import { useState } from 'react';
 const Dashboard = () => {
     const [selectedDate, setSelectedDate] = useState(new Date());
     const handleSelectedDate = date => {
-        console.log(date);
         setSelectedDate(date);
     }
     return (
