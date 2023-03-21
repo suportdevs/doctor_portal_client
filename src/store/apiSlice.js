@@ -12,7 +12,15 @@ export const apiSlice = createApi({
             }),
             invalidatesTags: ['appointments']
         }),
+        appointmentsByDate: builder.mutation({
+            query: (initialAppointment) => ({
+                url: "/dashboard/appointment_by_date",
+                method: "POST",
+                body: initialAppointment
+            }),
+            invalidatesTags: ['appointments']
+        }),
     }),
 });
 
-export const {useStoreAppointmentMutation} = apiSlice;
+export const {useStoreAppointmentMutation, useAppointmentsByDateMutation} = apiSlice;
