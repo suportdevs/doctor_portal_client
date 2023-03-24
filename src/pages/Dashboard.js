@@ -9,17 +9,14 @@ import { useAppointmentsByDateMutation } from '../store/apiSlice';
 
 const Dashboard = () => {
     const [selectedDate, setSelectedDate] = useState(new Date());
-    const [getAppointmentByDate, result, data] = useAppointmentsByDateMutation();
+    const [getAppointmentByDate, {data, isLoading, isError, isSuccess}] = useAppointmentsByDateMutation();
     const handleSelectedDate = date => {
         setSelectedDate(date);
-
     }
     useEffect(() => {
         getAppointmentByDate({date: selectedDate}).unwrap();
     }, [selectedDate]);
-    
-    console.log(result);
-    console.log(result.data);
+    console.log(isSuccess ? data.length : 0)
 
     return (
         <>
@@ -34,7 +31,7 @@ const Dashboard = () => {
                         <Calendar onChange={handleSelectedDate} value={selectedDate} className='rounded shadow-lg border-transparent p-5' style={{borderColor: 'white'}} />
                         </div>
                         <div className="w-full col-span-2 bg-white rounded-lg shadow">
-                            <DateByAppointment></DateByAppointment>
+                            {/* <DateByAppointment appointments={data} isLoading={isLoading} isError={isError}></DateByAppointment> */}
                         </div>
                     </div>
                 </div>
